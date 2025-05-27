@@ -1,12 +1,14 @@
 package org.example.AcceptanceTest;
 
 import io.cucumber.java.en.*;
-import org.example.SchedulingAndTaskManagement;
+
 import java.util.List;
 import java.util.Map;
+
+import org.example.SchedulingAndTaskManagement;
 import org.junit.jupiter.api.Assertions;
-import static org.junit.Assert.*;
-public class SchedulingAndTaskManagementSteps {
+
+public class SchedulingTaskManagement {
 
     SchedulingAndTaskManagement system = new SchedulingAndTaskManagement();
     String currentChef;

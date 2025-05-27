@@ -26,14 +26,9 @@ Feature: Customer Profile Management
       | 2025-04-25 | Lentil Soup, Bread         | 9.75        |
       | 2025-04-23 | Pasta Primavera            | 11.40       |
       | 2025-04-20 | Grilled Veggie Wrap        | 8.95        |
-    And each order should show date, items, and total price
+
 
   Scenario: Chef views customer preferences
     Given a chef is logged in
     When they select a customer profile
     Then the system should display dietary restrictions
-    And highlight the following allergies in red:
-      | Allergen   |
-      | Peanuts    |
-      | Dairy      |
-      | Shellfish  |

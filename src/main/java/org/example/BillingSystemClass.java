@@ -1,16 +1,19 @@
 package org.example;
 
 import java.util.List;
+import org.example.OrderInBilling;
 
-public class BillingSystem {
 
-    public void processOrder(Order order) {
-        System.out.println("Processing order: " + order.getOrderType() + " using " + order.getPaymentMethod());
+public class BillingSystemClass {
+
+    public void processOrder(OrderInBilling order) {
+
+        System.out.println("Processing order: " + OrderInBilling.getOrderType() + " using " + OrderInBilling.getPaymentMethod());
         generateInvoice(order);
     }
 
-    public void generateInvoice(Order order) {
-        System.out.println("Generating PDF invoice for: " + order.getOrderType());
+    public void generateInvoice(OrderInBilling order) {
+        System.out.println("Generating PDF invoice for: " + OrderInBilling.getOrderType());
         System.out.println("Emailing invoice to customer...");
     }
 
