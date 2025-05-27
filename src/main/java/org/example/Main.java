@@ -1,5 +1,8 @@
 package org.example;
 
+
+
+import java.util.ArrayList;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -7,7 +10,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-    private static final Scanner scanner = new Scanner(System.in);
+    private static  Scanner scanner = new Scanner(System.in);
     private static final BillingSystemClass billingSystem = new BillingSystemClass();
     private static OrderAndMenuCustomization orderCustomization;
     private static final SchedulingAndTaskManagement taskManager = new SchedulingAndTaskManagement();
